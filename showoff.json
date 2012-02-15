@@ -1,0 +1,7 @@
+{
+    "name": "Bashing time",
+    "sections": [
+        { "section": "basics" },
+        { "section": "bash_completion" }
+    ]
+}
