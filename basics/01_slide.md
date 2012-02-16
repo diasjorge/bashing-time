@@ -44,7 +44,9 @@ Ctrl-_
 
 Alt-r
 
-.notes Ctrl-l	 Clear the screen leaving the current line at the top of the screen. Alt-r	 Undo all changes to the line.
+ctrl-]
+
+.notes Ctrl-l	 Clear the screen leaving the current line at the top of the screen. Alt-r	 Undo all changes to the line. ctrl-] character search
 
 !SLIDE bullets
 # Transformations #
