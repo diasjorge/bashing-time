@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Bashing time</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="about_me/01_slide/1">
+<h1>Bashing Time</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets smaller" ref="about_me/01_slide/2">
+<h1>Jorge Dias</h1>
+
+<ul>
+<li>Ruby enthusiast since 2007</li>
+<li>Emacs junkie</li>
+<li>Blog: <a href="http://mrdias.com">http://mrdias.com</a></li>
+<li>Code: <a href="https://github.com/diasjorge">https://github.com/diasjorge</a></li>
+<li>Twitter: <a href="http://twitter.com/dias_jorge">@dias_jorge</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center commandline incremental" ref="basics/01_slide/1">
+<h1>Where to start</h1>
+
+<pre><code><code class="command">$ man bash</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/2">
+<h1>Efficient moving</h1>
+
+<p>Ctrl-a / Ctrl-e</p>
+
+<p>Bonus point (they also work in OSX)</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/3">
+<h1>Efficient moving</h1>
+
+<p>Ctrl-b / Ctrl-f</p>
+
+<p>Alt-b   / Alt-f</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/4">
+<h1>Efficient work (Copying)</h1>
+
+<p>Ctrl-k / Ctrl-u</p>
+
+<p>Alt-d / Ctrl-w</p>
+
+<p>Esc-Backspace</p>
+
+<p class="notes">Ctrl-u    Delete from the cursor to the beginning of the line. Ctrl-k     Delete from the cursor to the end of the line. Ctrl-w   Delete from the cursor to the start of the word. Alt-d    Delete from the cursor to the end of the word. Esc-Backspace  Delete previous word</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/5">
+<h1>Efficient work (Pasting)</h1>
+
+<p>Ctrl-y</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/6">
+<h1>Efficient work (Others)</h1>
+
+<p>Ctrl-l</p>
+
+<p>Ctrl-x Ctrl-u</p>
+
+<p>Ctrl-_</p>
+
+<p>Alt-r</p>
+
+<p>ctrl-]</p>
+
+<p class="notes">Ctrl-l    Clear the screen leaving the current line at the top of the screen. Alt-r   Undo all changes to the line. ctrl-] character search</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/7">
+<h1>Transformations</h1>
+
+<p>Alt-u</p>
+
+<p>Alt-c</p>
+
+<p>Alt-l</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/8">
+<h1>Transformations</h1>
+
+<p>Ctrl-t</p>
+
+<p>Alt-t</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/9">
+<h1>History (Searching)</h1>
+
+<p>Ctrl-r</p>
+
+<p>Ctrl-p</p>
+
+<p>Ctrl-n</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/10">
+<h1>History (Executing)</h1>
+
+<p>Esc-.</p>
+
+<p>!$</p>
+
+<p>!!</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="basics/01_slide/11">
+<h1>History (Executing)</h1>
+
+<p>!NUMBER</p>
+
+<p>!KEY</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="basics/01_slide/12">
+<h1>VI mode</h1>
+
+<p>Use at your own risk</p>
+
+<p>"set -o vi" to your ~/.bashrc.</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="basics/01_slide/13">
+<h1>DEMO</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bash_completion/01_slide/1">
+<h1>Programmable Completion</h1>
+
+<h2>AKA Autocompletion</h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="bash_completion/01_slide/2">
+<h1>Completion Variables</h1>
+
+<p>COMP_LINE</p>
+
+<p>COMP_WORDS</p>
+
+<p>COMP_CWORD</p>
+
+<p>COMP_POINT</p></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental center" ref="bash_completion/01_slide/3">
+<h1>Complete command</h1>
+
+<pre><code><code class="command">$ complete -F _function function</code>
+<code class="result">
+</code><code class="command">$ complete -C command function</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="bash_completion/01_slide/4">
+<h1>A simple example</h1>
+
+<pre class="sh_sh"><code>xingdir="/Users/jorge.dias/development/xing"
+
+function cx() {
+  dir="$xingdir"
+  if [ -n $1 ]; then
+    dir="$dir/$1"
+  fi
+  cd $dir
+}
+
+function _cx() {
+  local cur
+
+  cur=${COMP_WORDS[COMP_CWORD]}
+  subdirectories="$( cd $xingdir &amp;&amp; ls -d */ | sed 's/\///' )"
+  COMPREPLY=( $( compgen -W "$subdirectories" -- "$cur" ) )
+}
+
+complete -F _cx cx</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="bash_completion/01_slide/5">
+<h1>A ruby example</h1>
+
+<pre class="sh_sh"><code>complete -C autocompletion -o default command
+
+@@@ ruby
+#!/usr/bin/env ruby
+unless ENV['COMP_LINE'].nil?
+  puts Completion.new(ENV["COMP_LINE"]).matches
+  exit 0
+end
+
+@@@ ruby
+class Completion
+  def initialize(comp_line)
+    @comp_words = comp_line.split(" ")
+  end
+
+  def matches
+    if @comp_words.size == 1
+      ["one", "two"]
+    elsif @comp_words.size == 2
+      ["one", "two"].select { |x| x.include? @comp_words[1] }
+    end
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="outro/01_slide/1">
+<h1>Thanks</h1>
+
+<h2>Questions</h2></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="outro/01_slide/2">
+<h1>References</h1>
+
+<p>$ man bash</p>
+
+<p><a href="http://www.ice2o.com/bash.php">http://www.ice2o.com/bash.php</a></p>
+
+<p><a href="http://www.debian-administration.org/article/316/An_introduction_to_bash_completion_part_1">http://www.debian-administration.org/article/316/An<em>introduction</em>to<em>bash</em>completion<em>part</em>1</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="outro/01_slide/3">
+<h1>Cheat sheet</h1>
+
+<p><a href="https://gist.github.com/1838101">https://gist.github.com/1838101</a></p></div>
+</div></div>
+
+</body>
+</html>
