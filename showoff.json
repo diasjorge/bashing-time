@@ -1,7 +1,9 @@
 {
     "name": "Bashing time",
     "sections": [
+        { "section": "about_me" },
         { "section": "basics" },
-        { "section": "bash_completion" }
+        { "section": "bash_completion" },
+        { "section": "outro" }
     ]
 }

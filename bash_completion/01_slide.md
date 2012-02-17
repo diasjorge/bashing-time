@@ -1,5 +1,9 @@
 !SLIDE
 
+# Programmable Completion #
+## AKA Autocompletion ##
+
+!SLIDE center
 # Completion Variables #
 
 COMP_LINE
@@ -11,7 +15,6 @@ COMP_CWORD
 COMP_POINT
 
 !SLIDE commandline incremental center
-
 # Complete command #
 
     $ complete -F _function function
@@ -19,7 +22,6 @@ COMP_POINT
     $ complete -C command function
 
 !SLIDE smaller
-
 # A simple example #
 
     @@@ sh

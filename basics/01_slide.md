@@ -95,3 +95,6 @@ Esc-.
 Use at your own risk
 
 "set -o vi" to your ~/.bashrc.
+
+!SLIDE center
+# DEMO #
